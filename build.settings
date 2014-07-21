@@ -1,0 +1,46 @@
+-- Supported values for orientation:
+-- portrait, portraitUpsideDown, landscapeLeft, landscapeRight
+
+settings = {
+	orientation = {
+		default = "portrait",
+		supported = { "portrait", }
+	},
+
+	iphone = {
+		plist = {
+			UIStatusBarHidden = false,
+			UIPrerenderedIcon = true, -- set to false for "shine" overlay
+                        --UIAppFonts =
+                        --{
+                        --    "ALEAWB_.ttf",
+                        --    "ALEAWBB.ttf"
+                        --},
+		}
+	},
+        
+    android =
+    {
+        --versionCode = "10", -- This comes from the build screen now
+        
+        largeHeap = true, -- load images 2048x2048
+        --usesExpansionFile = true,
+        usesPermissions =
+        {
+                "android.permission.INTERNET",
+                "android.permission.WRITE_EXTERNAL_STORAGE",
+                "android.permission.READ_EXTERNAL_STORAGE"
+        },
+    },
+    
+    plugins =
+    {
+        -- key is the name passed to Lua's 'require()'
+        --["CoronaProvider.native.popup.social"] =
+        --{
+        --    -- required
+        --    publisherId = "com.coronalabs",
+        --},
+    },
+        
+}
