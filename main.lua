@@ -1,12 +1,10 @@
 -----------------------------------------------------------------------------------------
 --
--- main.lua - This is a simple prototype; things are hard coded; it is very messy.
+-- This is a simple prototype; things are hard coded; it is very messy.
 -- it is not really meant to be used as a starting point or anything. It is only for
 -- testing. assddfdasfasd
 --
 -----------------------------------------------------------------------------------------
---local loadsave = require("scripts.loadsave")
---utils = require("scripts.utils")
 
 --screenW, screenH, halfW, halfH = display.contentWidth, display.contentHeight, display.contentWidth*0.5, display.contentHeight*0.5;
 
